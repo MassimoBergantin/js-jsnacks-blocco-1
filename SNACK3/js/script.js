@@ -1,11 +1,9 @@
-// js-snack-3
-// il software deve chiedere per 10 volte all’utente di inserire un numero.
-// Il programma stampa la somma di tutti i numeri inseriti.
+// Snack 3
+// Abbiamo sempre un array di squadre, con:
+// nome
+// punti fatti
+// falli subiti
+// Stampare in html i dati relativi alle squadre evidenziando in giallo la riga corrispondente alla squadra con più falli subiti.
 
-var result = 0;
- 
-for (var i = 1; i <= 10; i++) {
-    var num = parseInt(prompt("Dimmi un munero"));
-    result += num;
-}
-document.getElementById("output").innerHTML = result;
+
+
