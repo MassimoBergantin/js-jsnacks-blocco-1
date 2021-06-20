@@ -1,38 +1,15 @@
-// Creare un array di oggetti di squadre di calcio.
-// Ogni squadra avrà diverse proprietà:
-// nome,
-// punti fatti,
-// falli subiti.
-// Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-// Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
-// Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-// Svilupparlo in ES6.
+// js-snack-2
+// L’utente inserisce due parole in successione, con due prompt.
+// Il software stampa prima la parola più corta, poi la parola più lunga.
 
 
+var firstWord = prompt("inserisci la prima parola");
+var secondWord = prompt("inserisci la seconda parola");
 
-const team = [
-    {
-        nome: 'Juventus',
-        punti: 0,
-        falli: 0
-    },
-    {
-        nome: 'Milan',
-        punti: 0,
-        falli: 0
-    },    {
-        nome: 'Inter',
-        punti: 0,
-        falli: 0
-    },
-];
-
-const randomNumber = (min,max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-for (let x = 0; x < team.length; x++) {
-   team[x].punti = randomNumber (10,100);
-   team[x].falli = randomNumber (10,100);
-
+if(firstWord.length > secondWord.length){
+    document.getElementById("output").innerHTML = secondWord + "--" + firstWord;
+} else if(firstWord.length < secondWord.length){
+    document.getElementById("output").innerHTML = firstWord + "--" + secondWord;
+} else if(secondWord.length = firstWord.length){
+    document.getElementById("output").innerHTML = "entrambe le parole hanno la stessa lunghezza";
 }
-
-console.log(team)
